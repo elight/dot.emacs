@@ -1,6 +1,6 @@
 ;;; Jim Weirich's GNU-Emacs Initialization File
 
-(setq elisp-directory "~jim/.elisp")
+(setq elisp-directory "~/.elisp")
 (load (concat elisp-directory "/load-ini.el"))
 
 (custom-set-variables
@@ -8,7 +8,6 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(ecb-source-path (quote (("/home/jim/working/rubyforge/rubygems" "RubyGems") ("/home/jim/working/rubyforge/rake" "Rake"))))
  '(gnuserv-program (concat exec-directory "/gnuserv"))
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
@@ -63,16 +62,4 @@
  '(nxml-tag-delimiter-face ((((class color)) (:foreground "lightblue")) (((type tty)) (:foreground "lightblue"))) t)
  '(region ((((class color)) (:foreground "white" :background "SkyBlue4")) (((type tty)) (:foreground "white" :background "SkyBlue4"))))
  '(smerge-refined-change ((t (:background "orange"))))
- '(trailing-whitespace ((((class color)) (:foreground "red" :background "yellow")) (((type tty)) (:foreground "red" :background "yellow")))))
-
-
-;;; This was installed by package-install.el.
-;;; This provides support for the package system and
-;;; interfacing with ELPA, the package archive.
-;;; Move this code earlier if you want to reference
-;;; packages in your .emacs.
-(let ((fn (expand-file-name "~/.emacs.d/elpa/package.el")))
-  (when (file-readable-p fn)
-    (load fn)
-    (package-initialize)))
-(put 'downcase-region 'disabled nil)
+ '(trailing-whitespace ((((class color)) (:foreground "red" :background "yellow")) (((type tty)) (:foreground "red" :backGROUND "YELLOW")))))

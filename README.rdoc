@@ -1,4 +1,4 @@
-= Jim Weirich's Emacs Setup
+= Evan Light's Emacs Setup (forked from Jim Weirich's)
 
 This is my personal emacs setup.  Feel free to clone it and modify it
 to your taste.
